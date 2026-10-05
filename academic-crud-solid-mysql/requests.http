@@ -1,0 +1,55 @@
+### Health
+GET http://localhost:3000/api/v1/health
+
+### Students
+GET http://localhost:3000/api/v1/students
+
+### Student by ID
+GET http://localhost:3000/api/v1/students/1
+
+### Create student
+POST http://localhost:3000/api/v1/students
+Content-Type: application/json
+
+{
+  "code": "STU0000000003",
+  "firstName": "Laura",
+  "lastName": "García",
+  "identification_type_id": 1,
+  "identificationNumber": "1234567890103",
+  "gender": "Femenino",
+  "birthdate": "2005-10-10 00:00:00",
+  "email": "laura@example.com",
+  "address": "Zona 10",
+  "city_id": 1
+}
+
+### Update student
+PUT http://localhost:3000/api/v1/students/1
+Content-Type: application/json
+
+{
+  "email": "ana.actualizada@example.com",
+  "address": "Zona 10"
+}
+
+### Delete student
+DELETE http://localhost:3000/api/v1/students/1
+
+### Courses
+GET http://localhost:3000/api/v1/courses
+
+### Teachers
+GET http://localhost:3000/api/v1/teachers
+
+### Schedules
+GET http://localhost:3000/api/v1/coursesSchedules
+
+### Inscriptions
+GET http://localhost:3000/api/v1/inscriptions
+
+### Rates
+GET http://localhost:3000/api/v1/rates
+
+### Topics
+GET http://localhost:3000/api/v1/topics
